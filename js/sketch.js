@@ -13,6 +13,7 @@ function getCode(left_gesture, right_gesture) {
     "234": 6,
     "c": 7,
     "2-reverse": 8,
+    "none": 9,
   }
   let left_code = code_array[left_gesture];
   let right_code = code_array[right_gesture];
@@ -23,11 +24,11 @@ function getCode(left_gesture, right_gesture) {
 
 function getCharacter(code) {
   const codeToChar = {
-    "11": "a", "12": "b", "13": "c", "14": "d", "15": "e", "16": "f",
-    "21": "g", "22": "h", "23": "i", "24": "j", "25": "k", "26": "l",
-    "31": "m", "32": "n", "33": "o", "34": "p", "35": "q", "36": "r",
-    "41": "s", "42": "t", "43": "u", "44": "v", "45": "w", "46": "x",
-    "51": "y", "52": "z", "53": " ", "54": "backspace"
+    "25": "a", "16": "b", "49": "c", "27": "d", "69": "e", "24": "f",
+    "77": "g", "23": "h", "19": "i", "93": "j", "15": "k", "39": "l",
+    "88": "m", "18": "n", "09": "o", "27": "p", "02": "q", "37": "r",
+    "00": "s", "22": "t", "33": "u", "59": "v", "96": "w", "11": "x",
+    "52": "y", "55": "z", "99": "backspace"
   };
   return codeToChar[code] || "";
 }

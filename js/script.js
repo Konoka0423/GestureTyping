@@ -24,7 +24,7 @@ const createGestureRecognizer = async () => {
     gestureRecognizer = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: {
             modelAssetPath:
-                "/Users/sanokonoka/Downloads/IA/intraction/aiueo/yubigesture_recognizer.task",
+                "./models/gesture_recognizer_yubi.task",
             delegate: "GPU"
         },
         runningMode: runningMode,
