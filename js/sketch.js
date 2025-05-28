@@ -1,15 +1,18 @@
 // ジェスチャーの種類
-// 👍(Thumb_Up), 👎(Thumb_Down), ✌️(Victory), 
-// ☝️(Pointng_Up), ✊(Closed_Fist), 👋(Open_Palm), 
-// 🤟(ILoveYou)
+// 👍(1), ✌️(23), ✌️ー逆(2-reverse)
+// ☝️(2), 👌(15),🤌(c),  
+// 👈(12),234(234),maru(0)
 function getCode(left_gesture, right_gesture) {
   let code_array = {
-    "Thumb_Up": 1,
-    "Thumb_Down": 2,
-    "Victory": 3,
-    "Pointing_Up": 4,
-    "Closed_Fist": 5,
-    "Open_Palm": 6,
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "12": 3,
+    "15": 4,
+    "23": 5,
+    "234": 6,
+    "c": 7,
+    "2-reverse": 8,
   }
   let left_code = code_array[left_gesture];
   let right_code = code_array[right_gesture];
