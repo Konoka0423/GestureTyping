@@ -24,11 +24,11 @@ function getCode(left_gesture, right_gesture) {
 
 function getCharacter(code) {
   const codeToChar = {
-    "25": "a", "26": "b", "49": "c", "27": "d", "69": "e", "24": "f",
+    "25": "a", "26": "b", "79": "c", "27": "d", "69": "e", "24": "f",
     "77": "g", "23": "h", "29": "i", "93": "j", "15": "k", "39": "l",
     "88": "m", "28": "n", "09": "o", "66": "p", "02": "q", "37": "r",
     "00": "s", "22": "t", "33": "u", "59": "v", "96": "w", "11": "x",
-    "52": "y", "55": "z", "99": "backspace"
+    "52": "y", "55": "z", "99": "backspace", "44": " "
   };
   return codeToChar[code] || "";
 }
