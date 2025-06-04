@@ -87,7 +87,7 @@ function setup() {
 
       let now = millis();
       if (c === lastChar) {
-        if (now - lastCharTime > 700) {
+        if (now - lastCharTime > 850) {
           // 1秒以上cが同じ値である場合の処理
           typeChar(c);
           lastCharTime = now;
